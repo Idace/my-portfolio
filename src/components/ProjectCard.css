@@ -1,0 +1,76 @@
+
+
+.card {
+    background-color: #000;
+    color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2px solid white;
+    max-width: 300px;
+    padding: 16px;
+    box-shadow: 0px 10px 20px rgba(255, 0, 255, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.icon-hero {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #0ff;
+    }
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 12px;
+
+}
+
+.card-content {
+    text-align: left;
+}
+
+.card-content h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #ff00ff;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.label {
+    color: #0ff;
+    font-weight: 600;
+    margin-left: 0.3rem;
+}
+
+.icon {
+    color: #ff00ff;
+    margin-right: 0,3rem;
+}
+
+.github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #0ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+    color: #0ff;
+}
+

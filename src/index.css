@@ -1,0 +1,26 @@
+body {
+  margin: 0; 
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #ff00ff;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px; 
+  flex-wrap: wrap;
+}
