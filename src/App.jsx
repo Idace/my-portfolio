@@ -52,9 +52,8 @@ function App() {
             It also took some effort to get all the form fields lined up properly and looking good. Styling things like placeholder text and checkboxes 
             to match the rest of the design was a bit tricky, but I figured it out."
             role="Solo project"
-            
-           
         />
+        
         <ProjectCard
         icon={<FaRocket />}
           name="Genesis Portfolio Website"
