@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+
 import ProjectCard from "../components/ProjectCard";
 import project1Image from "../assets/project1.png";
 import project2Image from "../assets/project2.png";
@@ -8,9 +9,19 @@ from "react-icons/fa";
 
 
 function Portfolio() {
+    const [showProjects, setShowProjects] = useState(false);
+
   return (
     <div className="portfolio">
-      <h1 className="title">PORTFOLIO</h1>
+        <div className="portfolio-header">
+            <h1 className="title">PORTFOLIO</h1>
+        </div>
+
+      <button className="preview-btn" onClick={() => setShowProjects(!showProjects)}>
+        {showProjects ? "Hide projects" : "Preview Projects"}
+      </button>
+      
+      {showProjects &&(
       <div className="card-container">
         <ProjectCard 
           icon={<FaCube />}
@@ -73,6 +84,7 @@ function Portfolio() {
           role="Solo project"
       />
       </div>
+    )}
     </div>
   );
 }
