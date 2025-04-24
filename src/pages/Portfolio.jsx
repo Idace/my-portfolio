@@ -1,15 +1,15 @@
 import React from "react";
-import ProjectCard from "./components/ProjectCard";
-import project1Image from "./assets/project1.png";
-import project2Image from "./assets/project2.png";
-import project3Image from "./assets/project3.png";
+import ProjectCard from "../components/ProjectCard";
+import project1Image from "../assets/project1.png";
+import project2Image from "../assets/project2.png";
+import project3Image from "../assets/project3.png";
 import {FaCube, FaCodeBranch, FaRocket} 
 from "react-icons/fa";
 
 
-function App() {
+function Portfolio() {
   return (
-    <div className="app">
+    <div className="portfolio">
       <h1 className="title">PORTFOLIO</h1>
       <div className="card-container">
         <ProjectCard 
@@ -77,4 +77,4 @@ function App() {
   );
 }
 
-export default App
+export default Portfolio

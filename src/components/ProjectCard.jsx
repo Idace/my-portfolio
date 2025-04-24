@@ -3,7 +3,9 @@ import {FaGithub, FaCode, FaPuzzlePiece, FaUserTie, FaLightbulb
 }
 from "react-icons/fa";
 
-import "./ProjectCard.css";
+import "../components/ProjectCard.css";
+
+
 
 function ProjectCard({icon, name, screenshot,github, tech, description, whatItDoes, learned, role,challenges }){
     return (
