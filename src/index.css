@@ -36,6 +36,18 @@ margin-top: 2rem;
   white-space: nowrap;
 }
 
+.big-icon-overlap {
+  width: 350px;
+  height: auto;
+  position: relative;
+  top: -120px;
+  margin-right: 50px;
+  transition: transform 0.3s ease;
+  transform: rotate(-20deg);
+}
+.big-icon-overlap:hover {
+  transform: scale(1,1);
+}
 
 .preview-btn {
   display: block;

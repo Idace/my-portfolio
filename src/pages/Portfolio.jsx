@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import bigIcon from "../assets/computer.png";
 import ProjectCard from "../components/ProjectCard";
 import project1Image from "../assets/project1.png";
 import project2Image from "../assets/project2.png";
@@ -15,6 +15,7 @@ function Portfolio() {
     <div className="portfolio">
         <div className="portfolio-header">
             <h1 className="title">PORTFOLIO</h1>
+            <img src={bigIcon} alt="3D Icon" className="big-icon-overlap" />
         </div>
 
       <button className="preview-btn" onClick={() => setShowProjects(!showProjects)}>
