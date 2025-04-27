@@ -37,10 +37,10 @@ margin-top: 2rem;
 }
 
 .big-icon-overlap {
-  width: 350px;
+  width: 300px;
   height: auto;
   position: relative;
-  top: -120px;
+  top: -70px;
   margin-right: 50px;
   transition: transform 0.3s ease;
   transform: rotate(-20deg);
