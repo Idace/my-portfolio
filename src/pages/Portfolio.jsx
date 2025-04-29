@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import bigIcon from "../assets/computer.png";
 import ProjectCard from "../components/ProjectCard";
+import Popup from "../components/Popup";
 import project1Image from "../assets/project1.png";
 import project2Image from "../assets/project2.png";
 import project3Image from "../assets/project3.png";
@@ -10,6 +11,7 @@ from "react-icons/fa";
 
 function Portfolio() {
     const [showProjects, setShowProjects] = useState(false);
+    const [selectedProject, setSelectedProject] = useState(null);
 
   return (
     <div className="portfolio">
@@ -44,7 +46,9 @@ function Portfolio() {
           I also had some issues with Flexbox and making sure the layout worked well on different screen sizes. 
           But solving these problems helped me become more careful and confident in my code."
           role="Solo project"
-        />
+            onClick={() => setSelectedProject({ screenshot: project1Image})}  
+          />
+        
         <ProjectCard
           icon={<FaCodeBranch />}
             name="Custom Sign-Up Form"
@@ -64,7 +68,10 @@ function Portfolio() {
             It also took some effort to get all the form fields lined up properly and looking good. Styling things like placeholder text and checkboxes 
             to match the rest of the design was a bit tricky, but I figured it out."
             role="Solo project"
-        />
+              onClick={() => setSelectedProject({ screenshot: project2Image
+            })}
+            />
+     
         
         <ProjectCard
         icon={<FaRocket />}
@@ -83,11 +90,18 @@ function Portfolio() {
           challenges="This was one of the hardest projects I’ve done. I had a lot of trouble getting things to work the way I wanted, especially with the layout and navigation. 
           But I kept trying, learned a lot along the way, and I’m really proud that I finished it and made it all work."
           role="Solo project"
-      />
+              onClick={() => setSelectedProject({ screenshot: project3Image
+            })}
+          />
       </div>
     )}
-    </div>
+
+  {selectedProject && (
+    <Popup project={selectedProject} onClose={() => setSelectedProject(null)} />
+    )}
+  </div>
   );
 }
+
 
 export default Portfolio
