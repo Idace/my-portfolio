@@ -1,0 +1,68 @@
+.popup-overlay {
+    position:fixed;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    height: 60%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadIn 0.3s ease-in;
+}
+.pop-content {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 20px 40px rgb(255, 0, 255,);
+    border-radius: 10px;
+    position: relative;
+    overflow-y: auto;
+    max-height: 80%;
+    animation: slideUp 0.4s ease-in-out;
+}
+
+.popup-screenshot {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 0 6px 16px #ff00ff;
+}
+
+.popup-close  {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: #0ff;
+    color: black;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in;
+}
+
+.popup-close:hover {
+    background-color: #ff00ff;;
+}
+
+@keyframes fadIn {
+from {opacity: 0; }
+to {opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: transletY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translatY(0);
+    }
+}
