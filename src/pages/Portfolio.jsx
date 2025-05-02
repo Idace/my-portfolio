@@ -7,11 +7,18 @@ import project2Image from "../assets/project2.png";
 import project3Image from "../assets/project3.png";
 import {FaCube, FaCodeBranch, FaRocket} 
 from "react-icons/fa";
+import { PiProjectorScreenChartDuotone } from "react-icons/pi";
 
 
 function Portfolio() {
     const [showProjects, setShowProjects] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
+    const [searchTerm, setSearchTerm] = useState("");
+
+   const filteredProjects = projects.filter((project) =>
+    project.name.toLowerCase().includes(searchTerm.toLowerCase())  ||
+    project.tech.toLowerCase().includes(searchTerm.toLowerCase())
+);
 
   return (
     <div className="portfolio">
@@ -20,12 +27,19 @@ function Portfolio() {
             <img src={bigIcon} alt="3D Icon" className="big-icon-overlap" />
         </div>
 
+        <input
+        type="text"
+        placeholder="Search after project"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)} />
+
       <button className="preview-btn" onClick={() => setShowProjects(!showProjects)}>
         {showProjects ? "Hide projects" : "Preview Projects"}
       </button>
       
       {showProjects &&(
       <div className="card-container">
+        {filteredProjects.map((project, index) => (
         <ProjectCard 
           icon={<FaCube />}
           name="Vision To Code"
@@ -48,6 +62,8 @@ function Portfolio() {
           role="Solo project"
             onClick={() => setSelectedProject({ screenshot: project1Image})}  
           />
+        
+
         
         <ProjectCard
           icon={<FaCodeBranch />}
@@ -92,7 +108,8 @@ function Portfolio() {
           role="Solo project"
               onClick={() => setSelectedProject({ screenshot: project3Image
             })}
-          />
+          />   
+        ))}
       </div>
     )}
 
