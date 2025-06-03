@@ -72,7 +72,7 @@ margin-top: 2rem;
   padding: 10px 20px;
   width: 100%;
   max-width: 400px;
-  margin: 20px auto;
+  margin: 0 auto;
   display: block;
   border: 2px solid white;
   border-radius: 8px;
@@ -89,3 +89,11 @@ font-weight: bold;
 font-size: 25px;
 }
 
+@media screen and (max-width:480px) {
+  .search-input {
+  max-width: 90%;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 12px;
+  }
+}
