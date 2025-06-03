@@ -1,0 +1,80 @@
+.site-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  border: 2px solid white;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  box-shadow: 0 20px 30px rgba(255, 0, 255, 0.4);
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.title {
+  font-size: clamp(32px, 6vw, 40px);
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ff00ff;
+  text-shadow: 0 0 10px #ff00ff, 0 0 20px #0ff;
+  font-weight: 900;
+  letter-spacing: 1px;
+  animation: pulseText 3s infinite ease-in-out;
+  word-break: break-word;
+  white-space: normal; 
+}
+
+.cart-btn {
+    display: block;
+    margin: 30px auto 0 auto;
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #0ff, #ff00ff);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px #ff00ff88;
+    transition: all 0.3s ease;
+}
+
+.cart-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #ff00ffcc;
+    color: white;
+}
+
+.cart-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes glitchBackground {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(10px, 10px);
+    }
+}
+
+.cart-message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #0ff;
+    font-weight: bold;
+    animation: fadeInOut 2s ease-in-out;
+    text-shadow: 0 0 8px #0ff;
+}
+
+@keyframes fadeInOut {
+    0% {opacity: 0 }
+    20% {opacity: 1 }
+    80% {opacity: 1 }
+    100% {opacity: 0 }
+}
