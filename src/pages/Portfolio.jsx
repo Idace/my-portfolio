@@ -65,7 +65,7 @@ const projects = [
     github: "https://github.com/Idace/API---DogImg.git",
     tech: ["CSS", "JavaScript", "HTML"],
     description:
-      "This is a playful dog-themed app with user authentication. It includes a login, signup and reset password flow, all styled in a vibrant neon-inspired interface. The main feature is a game where users get random dog images from an API, adding fun to function.",
+      "This is a playful dog-themed website with user authentication. It includes a login, signup and reset password flow, all styled in a vibrant neon-inspired interface. The main feature is a game where users get random dog images from an API, adding fun to function.",
     whatItDoes:
       "Users can sign up, log in securely, and reset their password if needed. Once logged in, they’re taken to the Woof Wall, where they can fetch surprise dog pictures by clicking a button. The layout is responsive and works across devices.",
     learned:
