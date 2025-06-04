@@ -16,18 +16,17 @@ const  About=()=> {
         <div className="about-card">
             <h2 className="about-section"> Product specs</h2>
             <p>
-                Background in retail, logistics and team leadership. Built for structure, multitasking and solving
-                chaos with calm and caffeine.
+               I know how a store works. I’ve led people, organised chaos and made things happen. Now I’m turning that into digital skills for e-commerce.
             </p>
         </div>
 
         <div className="about-card">
             <h2 className="about-section"> Features</h2>
             <ul>
-                <li>Hands-on experience from physicel stores</li>
-                <li>Organizationel ninja with a passion for clean UX</li>
-                <li>Team player who loves a laugh and a plan</li>
-                <li>Dreams of bridging the gap between shop floor and webshop</li>
+                <li>Built my skills on busy shop floors</li>
+                <li>Love structure, smart design and getting things done</li>
+                <li>Work best with good people and a good laugh</li>
+                <li>Learning the code behind the clicks to connect store and screen</li>
             </ul>
         </div>
 
@@ -42,13 +41,15 @@ const  About=()=> {
         <div className="about-card">
             <h2 className="about-section">Add to cart?</h2>
             <p>
-                Curiosity, creativity and stubborness included. Always ready to learn, build and push boundaries.
-                Click below to collaborate, limited edition, always evolving. 
+                Curious, creative and stubborn in the best way. I love to learn, build and explore what’s possible.
+                Let’s connect. I’m a work in progress and proud of it. 
             </p>
+
             <button className="about-btn" onClick={handleClick}>
                 Let's build something
             </button>
         </div>
+        
         {showPopup && (
             <div className="popup">
                 <p className="popup-text"> Email me at:<br /><strong>idaebeling@gmail.com</strong></p>

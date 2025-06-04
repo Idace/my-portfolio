@@ -5,7 +5,8 @@ import Popup from "../components/Popup";
 import project1Image from "../assets/project1.png";
 import project2Image from "../assets/project2.png";
 import project3Image from "../assets/project3.png";
-import { FaCube, FaCodeBranch, FaRocket } from "react-icons/fa";
+import APIDog from "../assets/APIDog.png"
+import { FaCube, FaCodeBranch, FaRocket, FaGamepad} from "react-icons/fa";
 
 const projects = [
   {
@@ -54,6 +55,23 @@ const projects = [
       "I learned how to build a multi-page website and connect everything together. I also learned how to use Sass to keep my styles clean and organized",
     challenges:
       "This was one of the hardest projects I’ve done. I had a lot of trouble getting things to work the way I wanted, especially with the layout and navigation. But I kept trying, learned a lot along the way, and I’m really proud that I finished it and made it all work.",
+    role: "Solo project",
+  },
+
+  {
+     icon: <FaGamepad />,
+    name: "Woof Wall - API",
+    screenshot: APIDog,
+    github: "https://github.com/Idace/API---DogImg.git",
+    tech: ["CSS", "JavaScript", "HTML"],
+    description:
+      "This is a playful dog-themed app with user authentication. It includes a login, signup and reset password flow, all styled in a vibrant neon-inspired interface. The main feature is a game where users get random dog images from an API, adding fun to function.",
+    whatItDoes:
+      "Users can sign up, log in securely, and reset their password if needed. Once logged in, they’re taken to the Woof Wall, where they can fetch surprise dog pictures by clicking a button. The layout is responsive and works across devices.",
+    learned:
+      "I learned how to structure a full authentication flow, handle form states, route between pages, and connect to an external API. I also practiced clean UI design and accessibility for input forms.",
+    challenges:
+      "Building the user flow and syncing it with local storage was a puzzle. Making the reset and login experience smooth on both mobile and desktop took a lot of tweaking. But in the end, everything clicked into place.",
     role: "Solo project",
   },
 ];
