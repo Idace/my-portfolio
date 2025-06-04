@@ -14,16 +14,14 @@ const Home =()=> {
         <div className="site-container">
             <h1 className="title">Hi and welcome to my digital storefront</h1>
             <p> I’m currently studying frontend development at Sundsgården Folk High School, 
-                a course for women and non-binary folks who want to break into tech. We’re learning how 
-                to build websites from scratch with HTML, CSS and JavaScript. We work in teams, help each other out 
-                and get inspired by women who are already working in the industry.
+                a course for women and non-binary people who want to break into tech. We’re learning how 
+                to build websites from scratch with HTML, CSS and JavaScript.
             </p>
             <p> 
-                It’s been intense, exciting and honestly really fun. This portfolio is where I’m collecting everything 
-                I’ve been working on so far. Some code, some design, some aha-moments and probably a few late-night bugs.
+               This portfolio is where I collect what I’ve been working on so far. Code, design and ideas in progress.
             </p>
             <p>
-                Feel free to look around and see what I’ve been up to.
+                Feel free to browse around. Just like any good webshop, new things are always being added.
             </p>
             <button className="cart-btn" onClick={handledAddClick}>
                 Add curiosity to cart

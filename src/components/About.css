@@ -3,6 +3,7 @@
     margin: 80px auto;
     padding: 40px;
     background-image: url(../assets/my-pic.png);
+    background-repeat: no-repeat;
     border: 2px solid white;
     border-radius: 30px; 
     box-shadow: 0 0 30px #ff00ff99;

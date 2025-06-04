@@ -16,7 +16,9 @@ const  About=()=> {
         <div className="about-card">
             <h2 className="about-section"> Product specs</h2>
             <p>
-               I know how a store works. I’ve led people, organised chaos and made things happen. Now I’m turning that into digital skills for e-commerce.
+               I have learned a lot from working in physical stores. 
+               Leading teams, staying organised and keeping things running smoothly. 
+               Now I am starting to turn that experience into digital skills for the world of e-commerce.
             </p>
         </div>
 
@@ -49,7 +51,7 @@ const  About=()=> {
                 Let's build something
             </button>
         </div>
-        
+
         {showPopup && (
             <div className="popup">
                 <p className="popup-text"> Email me at:<br /><strong>idaebeling@gmail.com</strong></p>
